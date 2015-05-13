@@ -1,0 +1,54 @@
+
+runcycle.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+1
+  rotate: false
+  xy: 1, 355
+  size: 300, 352
+  orig: 300, 352
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 1, 1
+  size: 300, 352
+  orig: 300, 352
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 303, 355
+  size: 300, 352
+  orig: 300, 352
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 303, 1
+  size: 300, 352
+  orig: 300, 352
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 605, 355
+  size: 300, 352
+  orig: 300, 352
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 605, 1
+  size: 300, 352
+  orig: 300, 352
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 907, 355
+  size: 300, 352
+  orig: 300, 352
+  offset: 0, 0
+  index: -1

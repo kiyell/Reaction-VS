@@ -1,0 +1,82 @@
+
+digitalclock.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+0
+  rotate: false
+  xy: 1, 647
+  size: 205, 321
+  orig: 205, 321
+  offset: 0, 0
+  index: -1
+1
+  rotate: false
+  xy: 1, 324
+  size: 205, 321
+  orig: 205, 321
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 208, 647
+  size: 205, 321
+  orig: 205, 321
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 1, 1
+  size: 205, 321
+  orig: 205, 321
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 208, 324
+  size: 205, 321
+  orig: 205, 321
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 415, 647
+  size: 205, 321
+  orig: 205, 321
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 208, 1
+  size: 205, 321
+  orig: 205, 321
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 415, 324
+  size: 205, 321
+  orig: 205, 321
+  offset: 0, 0
+  index: -1
+8
+  rotate: false
+  xy: 622, 647
+  size: 205, 321
+  orig: 205, 321
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 415, 1
+  size: 205, 321
+  orig: 205, 321
+  offset: 0, 0
+  index: -1
+dot
+  rotate: false
+  xy: 622, 324
+  size: 205, 321
+  orig: 205, 321
+  offset: 0, 0
+  index: -1
