@@ -72,6 +72,8 @@ import com.badlogic.gdx.Input;
  * 			  -- Implemented tie code. added more grade tiers 
  * 12/18/2014B -- Project migrated to home station. modified bgMusic playing and volume
  * 5/14/2015 -- github update file test
+ * 5/14/2015 -- github update to master but not branch * 5/14/2015 -- github update to master but not branch
+ * 5/14/2015 -- github update to master but not branch 2
  *
  * 5/14/2015 -- github test branch created
  * 
