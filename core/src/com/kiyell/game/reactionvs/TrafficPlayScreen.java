@@ -71,6 +71,7 @@ import com.badlogic.gdx.Input;
  * 12/18/2014 -- Changed x point of run game and game name. Changed speed of card game and random positions in mode 2. Changed bgMusic to MUSIC
  * 			  -- Implemented tie code. added more grade tiers 
  * 12/18/2014B -- Project migrated to home station. modified bgMusic playing and volume
+ * 5/14/2015 -- github update file test
  * 
  *           -- Looking to add sound and animation for fail/win -- MUSIC STILL STARTS WHEN GOING TO NEW SCREEN?
  *           -- Looking to add air push ads and public to play store
