@@ -28,7 +28,7 @@ import com.kiyell.game.reactionvs.TrafficPlayScreen.titleActor;
 
 public class MyGdxGame extends Game {
 	
-	 public ActionResolver ar;
+	//removed actionResolver public ActionResolver ar;
 
 	MyGdxGame game;
 	
@@ -68,11 +68,11 @@ public class MyGdxGame extends Game {
 	Preferences scorePref;
 	
 	
-//	public Game game;
-	
-	public MyGdxGame(ActionResolver ar) {
+//	public Game game; removed actionresolver reference
+
+	public MyGdxGame() {
 		game = this;
-		this.ar = ar;
+//		this.ar = ar;
 	}
 	 
 	

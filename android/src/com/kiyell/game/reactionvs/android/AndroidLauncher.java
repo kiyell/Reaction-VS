@@ -20,8 +20,8 @@ import com.mwfvdhbw.axqnjxec214139.AdListener;
 import com.mwfvdhbw.axqnjxec214139.AdView;
 import com.mwfvdhbw.axqnjxec214139.Prm;
 
-
-public class AndroidLauncher extends AndroidApplication implements ActionResolver {
+//remove interface for ads > public class AndroidLauncher extends AndroidApplication implements ActionResolver
+public class AndroidLauncher extends AndroidApplication {
 	@Override
 	protected void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,15 +30,17 @@ public class AndroidLauncher extends AndroidApplication implements ActionResolve
         cfg.useAccelerometer = false;
         cfg.useCompass = false;
         
-        if(ma==null) ma=new Prm(this, adCallbackListener, false);
+        // removed code for ads
+        // if(ma==null) ma=new Prm(this, adCallbackListener, false);
         RelativeLayout layout = new RelativeLayout(this);
         
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
-		getWindow().addFlags( WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON );
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		
-		View gameView = initializeForView(new MyGdxGame(this), cfg);
+		View gameView = initializeForView(new MyGdxGame(), cfg);
+		//View gameView = initializeForView(new MyGdxGame(this), cfg); <-- removed actionresolver pass-in
 
         RelativeLayout.LayoutParams adParams = new
         RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
@@ -49,19 +51,21 @@ public class AndroidLauncher extends AndroidApplication implements ActionResolve
                 RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
                 adParams2.addRule(RelativeLayout.ALIGN_PARENT_TOP);
                 adParams2.addRule(RelativeLayout.CENTER_HORIZONTAL);
-                
-        adView = new AdView(this, AdView.BANNER_TYPE_IN_APP_AD, AdView.PLACEMENT_TYPE_INTERSTITIAL, false, false, 
-                AdView.ANIMATION_TYPE_LEFT_TO_RIGHT);
-        adView.setAdListener(adlistener);
-       adView.setLayoutParams(adParams2);
+  // Removed adView setup
+  //      adView = new AdView(this, AdView.BANNER_TYPE_IN_APP_AD, AdView.PLACEMENT_TYPE_INTERSTITIAL, false, false,
+  //              AdView.ANIMATION_TYPE_LEFT_TO_RIGHT);
+  //      adView.setAdListener(adlistener);
+  //     adView.setLayoutParams(adParams2);
         layout.addView(gameView);
-        layout.addView(adView);
+// Removed ads from view        layout.addView(adView);
         setContentView(layout);
-        Gdx.input.setCatchBackKey(true);
+// Remove catching backKey        Gdx.input.setCatchBackKey(true);
 		
 		
 //		initialize(new MyGdxGame(this), cfg);
 	}
+
+	/* Removed code for ads
 
 	 AdListener adCallbackListener=new AdListener(){
 	        @Override
@@ -172,6 +176,6 @@ public class AndroidLauncher extends AndroidApplication implements ActionResolve
 	        if (ma!=null)
 	        	ma.runAppWall();
 	    }
-	    
+	    */
 
 	}

@@ -68,7 +68,7 @@ public class StartGameScreen implements Screen {
 	InputProcessor backProcessor = new InputAdapter() {
         @Override
         public boolean keyDown(int keycode) {
-
+/*
             if (((keycode == Keys.ESCAPE) || (keycode == Keys.BACK)) && !showSmartWall) {
                 // Maybe perform other operations before exiting
     						 	game.ar.startSmartWallAd();
@@ -79,6 +79,10 @@ public class StartGameScreen implements Screen {
             if (((keycode == Keys.ESCAPE) || (keycode == Keys.BACK)) && showSmartWall) {
             	Gdx.app.exit();
             }
+
+            Removed code to start smartWallAd, added exit
+            */
+			Gdx.app.exit();
             return true;
         }
     };
@@ -623,7 +627,8 @@ public class StartGameScreen implements Screen {
 		game.p3Score = new Array<Score>();
 		game.p4Score = new Array<Score>();
 
-		game.ar.showAds(true);
+		// removed airpush code for ads
+		// game.ar.showAds(true);
 		
 	}
 	

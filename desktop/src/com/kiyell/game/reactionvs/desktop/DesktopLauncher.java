@@ -26,11 +26,13 @@ public class DesktopLauncher {
 		config.width = 800;		
 		
 		
-		
-		new LwjglApplication(new MyGdxGame(new ActionResolver(){
+		/*new LwjglApplication(new MyGdxGame(new ActionResolver(){
             @Override public void startSmartWallAd(){}
             @Override public void showAds(boolean show){}
         }), config);
+		 *
+		  *removed code for ads */
+		new LwjglApplication(new MyGdxGame(), config);
 		
 	}
 }
